@@ -27,10 +27,7 @@ public class Registrar extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId()){
-            case R.id.item1:
-                Intent registrar = new Intent(this, Registrar.class);
-                startActivity(registrar);
-                return true;
+
 
             case R.id.item2:
                 Intent ayudar = new Intent(this, Ayudar.class);

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrar"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/lbNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite su Nombre:" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="10dp"/>
+
+
+    <TextView
+        android:id="@+id/lbEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite su Email:" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/lbCelular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite su No Celular: " />
+
+    <EditText
+        android:id="@+id/txtCelular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar" />
+</LinearLayout>

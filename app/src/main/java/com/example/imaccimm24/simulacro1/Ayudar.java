@@ -33,10 +33,7 @@ public class Ayudar extends AppCompatActivity {
                 startActivity(registar);
                 return true;
 
-            case R.id.item2:
-                Intent ayudar = new Intent(this, Ayudar.class);
-                startActivity(ayudar);
-                return true;
+
 
             case  R.id.item3:
                 Toast.makeText(this, "bye", Toast.LENGTH_SHORT).show();

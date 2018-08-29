@@ -16,6 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".menuP" />
+        <activity android:name=".que_visitar" />
+        <activity android:name=".donde_dormir" />
+        <activity android:name=".donde_comer" />
+        <activity android:name=".que_hacer" />
+        <activity android:name=".servicios_turisticos" />
+        <activity android:name=".llamadas_urgentes"></activity>
     </application>
 
 </manifest>

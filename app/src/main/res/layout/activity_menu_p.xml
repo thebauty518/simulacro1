@@ -46,10 +46,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:text="Texto"
+                    android:text="¿Que Visitar?"
                     android:textSize="18sp"
-                    android:textStyle="bold"
-                    tools:text="¿Que Visitar?" />
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
 
@@ -88,10 +87,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:text="Texto"
+                    android:text="¿Donde Dormir?"
                     android:textSize="18sp"
-                    android:textStyle="bold"
-                    tools:text="¿Donde Dormir?" />
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
 
@@ -130,10 +128,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:text="Texto"
+                    android:text="¿Donde Comer?"
                     android:textSize="18sp"
-                    android:textStyle="bold"
-                    tools:text="¿Donde Comer?" />
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
 
@@ -171,10 +168,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:text="Texto"
+                    android:text="¿Que Hacer?"
                     android:textSize="18sp"
-                    android:textStyle="bold"
-                    tools:text="¿Que Hacer?" />
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
 
@@ -212,10 +208,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:text="Texto"
+                    android:text="Servicios Turisticos"
                     android:textSize="18sp"
-                    android:textStyle="bold"
-                    tools:text="Servicios Turisticos" />
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
 
@@ -253,10 +248,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:text="Texto"
+                    android:text="Llamadas  Urgentes"
                     android:textSize="18sp"
-                    android:textStyle="bold"
-                    tools:text="Llamadas Urgentes" />
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
 

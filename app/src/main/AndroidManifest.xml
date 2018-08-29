@@ -22,7 +22,8 @@
         <activity android:name=".donde_comer" />
         <activity android:name=".que_hacer" />
         <activity android:name=".servicios_turisticos" />
-        <activity android:name=".llamadas_urgentes"></activity>
+        <activity android:name=".llamadas_urgentes" />
+        <activity android:name=".Informacion"></activity>
     </application>
 
 </manifest>

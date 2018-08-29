@@ -27,6 +27,7 @@ public class servicios_turisticos extends AppCompatActivity {
         inflater.inflate(R.menu.menu_principal, menu);
         return true;
     }
+    //p
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

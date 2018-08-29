@@ -18,6 +18,13 @@
         </activity>
         <activity android:name=".Registrar" android:label="Registro"  />
         <activity android:name=".Ayudar" android:label="Ayuda"></activity>
+        <activity android:name=".menuP" />
+        <activity android:name=".que_visitar" />
+        <activity android:name=".donde_dormir" />
+        <activity android:name=".donde_comer" />
+        <activity android:name=".que_hacer" />
+        <activity android:name=".servicios_turisticos" />
+        <activity android:name=".llamadas_urgentes"></activity>
     </application>
 
 </manifest>

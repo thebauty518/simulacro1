@@ -49,34 +49,6 @@ public class Usuario implements Serializable {
         Email = email;
     }
 
-    public float Registrar(Context context){
-        HelperSqlite base =new HelperSqlite(context,"bd_simulacro.db",null,1);
-        SQLiteDatabase datos = base.getWritableDatabase();
-        ContentValues values= new ContentValues();
-        values.put("Nombre",Nombre);
-        values.put("Telefono",Telefono);
-        values.put("Email",Email);
-        long uno = datos.insert("Usuario",null,values);
-        return uno;
-    }
-    public float Modificar(Context context) {
-        HelperSqlite base = new HelperSqlite(context, "bd_simulacro.db", null, 1);
-        SQLiteDatabase datos = base.getWritableDatabase();
-        ContentValues values= new ContentValues();
-        values.put("Nombre",Nombre);
-        values.put("Telefono",Telefono);
-        values.put("Email",Email);
-        long uno = datos.update("Uusario",values,"Nombre="+Nombre,null);
-        return uno;
-    }
 
-    public float Eliminar(Context context){
-        HelperSqlite base = new HelperSqlite(context, "bd_simulacro.db", null, 1);
-        SQLiteDatabase datos = base.getWritableDatabase();
-        long uno =  datos.delete("Usuario","Nombre="+Nombre,null);
-
-        return uno;
-
-    }
     }
 

@@ -11,10 +11,10 @@ public class HelperSqlite extends SQLiteOpenHelper{
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        sqLiteDatabase.execSQL("CREATE TABLE Usuario (\n" +
-                "    Nonmbre  TEXT,\n" +
-                "    Telefono TEXT,\n" +
-                "    Email    TEXT\n" +
+        sqLiteDatabase.execSQL("CREATE TABLE Usuario (" +
+                "    Nonmbre  TEXT," +
+                "    Telefono TEXT," +
+                "    Email    TEXT" +
                 ")");
         sqLiteDatabase.execSQL("CREATE TABLE Items (\n" +
                 "    Nombre      TEXT,\n" +

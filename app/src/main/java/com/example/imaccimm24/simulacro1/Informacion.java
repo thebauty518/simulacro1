@@ -28,6 +28,10 @@ public class Informacion extends AppCompatActivity {
 
         switch (item.getItemId()){
 
+            case R.id.itemIcono:
+                finish();
+                return true;
+
             case R.id.item1:
                 Intent registar = new Intent(this, Registrar.class);
                 startActivity(registar);

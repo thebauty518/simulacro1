@@ -40,6 +40,10 @@ public class Registrar extends AppCompatActivity {
         switch (item.getItemId()){
 
 
+            case R.id.itemIcono:
+                finish();
+                return true;
+                
             case R.id.item2:
                 Intent configuracion= new Intent(this, Items.class);
                 startActivity(configuracion);

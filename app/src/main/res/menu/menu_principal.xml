@@ -11,13 +11,18 @@
 
     <item
         android:id="@+id/item2"
+        android:title="Configuracion"
+        />
+
+    <item
+        android:id="@+id/item3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:title="Ayuda"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/item3"
+        android:id="@+id/item4"
         android:title="Salir"
         app:showAsAction="never" />
 </menu>

@@ -39,11 +39,15 @@ public class que_visitar extends AppCompatActivity {
                 return true;
 
             case R.id.item2:
+                Toast.makeText(this, "configuracion", Toast.LENGTH_SHORT).show();
+                return true;
+
+            case R.id.item3:
                 Intent ayudar = new Intent(this, Ayudar.class);
                 startActivity(ayudar);
                 return true;
 
-            case R.id.item3:
+            case R.id.item4:
                 Toast.makeText(this, "bye", Toast.LENGTH_SHORT).show();
                 finish();
                 return true;
@@ -51,6 +55,7 @@ public class que_visitar extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+
 
     }
 }

@@ -80,26 +80,31 @@ public class menuP extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         switch (item.getItemId()){
+
             case R.id.item1:
-                Intent registrar = new Intent(this, Registrar.class);
-                startActivity(registrar);
+                Intent registar = new Intent(this, Registrar.class);
+                startActivity(registar);
+                return true;
+            case R.id.item2:
+                Toast.makeText(this, "configuracion", Toast.LENGTH_SHORT).show();
                 return true;
 
-            case R.id.item2:
+            case R.id.item3:
                 Intent ayudar = new Intent(this, Ayudar.class);
                 startActivity(ayudar);
                 return true;
 
-            case R.id.item3:
+            case R.id.item4:
                 Toast.makeText(this, "bye", Toast.LENGTH_SHORT).show();
                 finish();
                 return true;
 
             default:
                 return super.onOptionsItemSelected(item);
-
         }
+
 
     }
 

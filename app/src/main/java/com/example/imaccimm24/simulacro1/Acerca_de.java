@@ -62,24 +62,30 @@ public class Acerca_de extends AppCompatActivity implements SensorEventListener 
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId()){
+
             case R.id.item1:
-                    Intent registrar = new Intent(this, Registrar.class);
-                    startActivity(registrar);
+                Intent registar = new Intent(this, Registrar.class);
+                startActivity(registar);
                 return true;
 
             case R.id.item2:
-                    Intent ayudar = new Intent(this, Ayudar.class);
-                    startActivity(ayudar);
+                Toast.makeText(this, "configuracion", Toast.LENGTH_SHORT).show();
                 return true;
 
             case R.id.item3:
-                    Toast.makeText(this, "bye", Toast.LENGTH_SHORT).show();
-                    finish();
+                Intent ayudar = new Intent(this, Ayudar.class);
+                startActivity(ayudar);
+                return true;
+
+            case R.id.item4:
+                Toast.makeText(this, "bye", Toast.LENGTH_SHORT).show();
+                finish();
                 return true;
 
             default:
                 return super.onOptionsItemSelected(item);
         }
+
 
     }
 

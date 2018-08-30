@@ -39,7 +39,8 @@ public class donde_comer extends AppCompatActivity {
                 startActivity(registar);
                 return true;
             case R.id.item2:
-                Toast.makeText(this, "configuracion", Toast.LENGTH_SHORT).show();
+                Intent configuracion= new Intent(this, Items.class);
+                startActivity(configuracion);
                 return true;
 
             case R.id.item3:

@@ -30,7 +30,8 @@
         <activity android:name=".servicios_turisticos" />
         <activity android:name=".llamadas_urgentes" />
         <activity android:name=".Informacion" />
-        <activity android:name=".Acerca_de"></activity>
+        <activity android:name=".Acerca_de" />
+        <activity android:name=".Items"></activity>
     </application>
 
 </manifest>

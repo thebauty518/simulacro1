@@ -71,7 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp" />
             <Spinner
-
+                
                 android:id="@+id/spCategoria"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -114,6 +114,6 @@
         </LinearLayout>
     </ScrollView>
 
-
+    
 
 </LinearLayout>

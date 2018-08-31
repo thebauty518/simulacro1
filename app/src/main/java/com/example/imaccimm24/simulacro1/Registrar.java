@@ -71,21 +71,21 @@ public class Registrar extends AppCompatActivity {
         String codigo = Nombre.getText().toString();
         if (!codigo.isEmpty()){
 
-            Cursor cursor = Datos.rawQuery
-                    ("select Telefono,Email from Usuario where Nombre ="+codigo,null);
+            Cursor cursor =Datos.rawQuery("select Telefono,Email from Usuario where Nombre ='"+codigo+"'",null);
             if (cursor.moveToFirst()){
                 Telefono.setText(cursor.getString(0));
                 Email.setText(cursor.getString(1));
                 Datos.close();
 
+
             }else{
-                Toast.makeText(this, "El Articulo que Buscas no existe", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "El Usuario que Buscas no existe", Toast.LENGTH_SHORT).show();
                 Datos.close();
             }
 
 
         }else{
-            Toast.makeText(this, "Debe especificar el codigo del producto para poder buscarlo", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Debe especificar el nombre para poder buscarlo", Toast.LENGTH_SHORT).show();
         }
 
 
@@ -101,6 +101,9 @@ public class Registrar extends AppCompatActivity {
             datos.insert("Usuario",null,values);
             datos.close();
                 Toast.makeText(this, "Registro Exitoso", Toast.LENGTH_SHORT).show();
+                Nombre.setText("");
+                Email.setText("");
+                Telefono.setText("");
 
         }else{
             Toast.makeText(this, "Debe de llenar todos los campos", Toast.LENGTH_SHORT).show();
@@ -115,9 +118,12 @@ public class Registrar extends AppCompatActivity {
             values.put("Nombre",Nombre.getText().toString());
             values.put("Telefono",Telefono.getText().toString());
             values.put("Email",Email.getText().toString());
-            datos.update("Usuario",values,"Nombre = "+Nombre.getText().toString(),null);
+            datos.update("Usuario",values,"Nombre = '"+Nombre.getText().toString()+"'",null);
             datos.close();
             Toast.makeText(this, "Actualizacion Exitoso", Toast.LENGTH_SHORT).show();
+            Nombre.setText("");
+            Email.setText("");
+            Telefono.setText("");
 
         }else{
             Toast.makeText(this, "Debe de llenar todos los campos", Toast.LENGTH_SHORT).show();
@@ -128,9 +134,12 @@ public class Registrar extends AppCompatActivity {
             HelperSqlite base =new HelperSqlite(this,"bd_simulacro.db",null,1);
             SQLiteDatabase datos = base.getWritableDatabase();
 
-            datos.delete("Usuario","Nombre = "+Nombre.getText().toString(),null);
+            datos.delete("Usuario","Nombre = '"+Nombre.getText().toString()+"'",null);
             datos.close();
             Toast.makeText(this, "Eliminado de forma Exitoso", Toast.LENGTH_SHORT).show();
+            Nombre.setText("");
+            Email.setText("");
+            Telefono.setText("");
 
         }else{
             Toast.makeText(this, "Debe de llenar todos los campos", Toast.LENGTH_SHORT).show();

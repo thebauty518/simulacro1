@@ -27,6 +27,7 @@ public class HelperSqlite extends SQLiteOpenHelper{
                 "    Tipo        TEXT REFERENCES Tipo_Item (Tipo) \n" +
                 ")");
 
+
     }
 
     @Override

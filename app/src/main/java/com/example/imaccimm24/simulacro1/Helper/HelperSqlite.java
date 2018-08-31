@@ -27,10 +27,20 @@ public class HelperSqlite extends SQLiteOpenHelper{
                 "    Tipo        TEXT REFERENCES Tipo_Item (Tipo) \n" +
                 ")");
                 sqLiteDatabase.execSQL("CREATE TABLE Tipo_Item (\n" +
-                        "    Tipo TEXT\n" +
+                        "    Tipo TEXT \n" +
                         ")");
 
+                sqLiteDatabase.execSQL("insert into Tipo_Item (Tipo)values('Museos'),('Monumentos')" +
+                        ",('Parques'),('Zona de Camping'),('Hoteles'),('Heladerías'),('Restaurantes')"+
+                ",('Guías Turísticos'),('Transporte'),('Droguería'),('Policía')");
 
+
+                sqLiteDatabase.execSQL("CREATE TABLE Categorias (\n" +
+                        "   Categoria TEXT \n" +
+                        ")");
+                sqLiteDatabase.execSQL("insert into Categorias (Categoria)values('¿Que Visitar?')"+
+                ",('¿Dónde Dormir?'),('¿Dónde Comer?'),('¿Qué Hacer?'),('tServicios Turísticos')"+
+                        ",('tLlamadas Urgentes')");
 
     }
 

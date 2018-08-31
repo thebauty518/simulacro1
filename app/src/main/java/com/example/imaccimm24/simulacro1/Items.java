@@ -12,11 +12,20 @@ import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.Toast;
 
+import com.example.imaccimm24.simulacro1.Helper.HelperSqlite;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Items extends AppCompatActivity {
 
     Spinner spItem;
     Spinner spCategorias;
 
+
+    HelperSqlite helperSqlite;
+    List<String> listarItem;
+    List<String> listarCategoria;
 
 
 
@@ -30,8 +39,8 @@ public class Items extends AppCompatActivity {
         spItem =(Spinner)findViewById(R.id.spItem);
         spCategorias=(Spinner)findViewById(R.id.spCategoria);
 
-        ArrayAdapter<String> Categoria;
-        ArrayAdapter<String> Items;
+
+
 
 
 

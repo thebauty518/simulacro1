@@ -72,7 +72,7 @@ public class Registrar extends AppCompatActivity {
         if (!codigo.isEmpty()){
 
             Cursor cursor = Datos.rawQuery
-                    ("select Telefono,Email from Usuario where Nonmbre ="+codigo,null);
+                    ("select Telefono,Email from Usuario where Nombre ="+codigo,null);
             if (cursor.moveToFirst()){
                 Telefono.setText(cursor.getString(0));
                 Email.setText(cursor.getString(1));
@@ -95,7 +95,7 @@ public class Registrar extends AppCompatActivity {
            HelperSqlite base =new HelperSqlite(this,"bd_simulacro.db",null,1);
            SQLiteDatabase datos = base.getWritableDatabase();
             ContentValues values = new ContentValues();
-            values.put("Nonmbre",Nombre.getText().toString());
+            values.put("Nombre",Nombre.getText().toString());
             values.put("Telefono",Telefono.getText().toString());
             values.put("Email",Email.getText().toString());
             datos.insert("Usuario",null,values);
@@ -112,10 +112,10 @@ public class Registrar extends AppCompatActivity {
             HelperSqlite base =new HelperSqlite(this,"bd_simulacro.db",null,1);
             SQLiteDatabase datos = base.getWritableDatabase();
             ContentValues values = new ContentValues();
-            values.put("Nonmbre",Nombre.getText().toString());
+            values.put("Nombre",Nombre.getText().toString());
             values.put("Telefono",Telefono.getText().toString());
             values.put("Email",Email.getText().toString());
-            datos.update("Usuario",values,"Nonmbre = "+Nombre.getText().toString(),null);
+            datos.update("Usuario",values,"Nombre = "+Nombre.getText().toString(),null);
             datos.close();
             Toast.makeText(this, "Actualizacion Exitoso", Toast.LENGTH_SHORT).show();
 
@@ -128,7 +128,7 @@ public class Registrar extends AppCompatActivity {
             HelperSqlite base =new HelperSqlite(this,"bd_simulacro.db",null,1);
             SQLiteDatabase datos = base.getWritableDatabase();
 
-            datos.delete("Usuario","Nonmbre = "+Nombre.getText().toString(),null);
+            datos.delete("Usuario","Nombre = "+Nombre.getText().toString(),null);
             datos.close();
             Toast.makeText(this, "Eliminado de forma Exitoso", Toast.LENGTH_SHORT).show();
 

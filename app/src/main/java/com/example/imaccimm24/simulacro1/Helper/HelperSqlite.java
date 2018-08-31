@@ -12,7 +12,7 @@ public class HelperSqlite extends SQLiteOpenHelper{
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         sqLiteDatabase.execSQL("CREATE TABLE Usuario (" +
-                "    Nonmbre  TEXT," +
+                "    Nombre  TEXT," +
                 "    Telefono TEXT," +
                 "    Email    TEXT" +
                 ")");
@@ -26,6 +26,10 @@ public class HelperSqlite extends SQLiteOpenHelper{
                 "    Categoria   TEXT REFERENCES Categoria_item (Categoria),\n" +
                 "    Tipo        TEXT REFERENCES Tipo_Item (Tipo) \n" +
                 ")");
+                sqLiteDatabase.execSQL("CREATE TABLE Tipo_Item (\n" +
+                        "    Tipo TEXT\n" +
+                        ")");
+
 
     }
 
